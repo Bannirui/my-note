@@ -7,6 +7,7 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
     this->setLayout(ui->verticalLayout);
+    ui->widgetBottom->setLayout(ui->horizontalLayout_2);
 }
 
 Widget::~Widget()

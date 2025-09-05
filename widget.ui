@@ -31,7 +31,7 @@
      <number>0</number>
     </property>
     <item>
-     <widget class="QWidget" name="top" native="true">
+     <widget class="QWidget" name="widgetTop" native="true">
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -129,7 +129,7 @@ QPushButton:pressed  { border-image: url(:/icon/close-2.png); }
      <widget class="QTextEdit" name="textEdit"/>
     </item>
     <item>
-     <widget class="QWidget" name="bottom" native="true">
+     <widget class="QWidget" name="widgetBottom" native="true">
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -142,26 +142,55 @@ QPushButton:pressed  { border-image: url(:/icon/close-2.png); }
       <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
-         <x>580</x>
+         <x>280</x>
          <y>10</y>
-         <width>69</width>
-         <height>20</height>
+         <width>381</width>
+         <height>24</height>
         </rect>
        </property>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
          <widget class="QLabel" name="pos">
           <property name="text">
-           <string>11:55</string>
+           <string>11行 55列</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QLabel" name="codec">
           <property name="text">
-           <string>utf8</string>
+           <string>UTF-8</string>
           </property>
          </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Policy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
         </item>
        </layout>
       </widget>
