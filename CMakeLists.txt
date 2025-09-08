@@ -8,7 +8,11 @@ set(CMAKE_AUTORCC ON)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_PREFIX_PATH "/home/dingrui/MyApp/Qt/6.9.2/gcc_64")
+if (APPLE)
+    set(CMAKE_PREFIX_PATH "/Users/dingrui/Qt/6.9.2/macos")
+else ()
+    set(CMAKE_PREFIX_PATH "/home/dingrui/MyApp/Qt/6.9.2/gcc_64")
+endif ()
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
