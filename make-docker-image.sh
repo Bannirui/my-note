@@ -1,0 +1,1 @@
+docker build ./build-env -t my-dev-env
