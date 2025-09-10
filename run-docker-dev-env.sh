@@ -1,1 +1,1 @@
-docker run --rm -it --name my-dev-env -v $PWD:/app my-dev-env
+docker run --rm -it --name my-dev-env -v $PWD:/root/env my-dev-env
